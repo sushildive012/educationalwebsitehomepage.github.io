@@ -1,0 +1,579 @@
+/* Css Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+/* Smooth Scrooling */
+HTML{
+    scroll-behavior: smooth;
+}
+
+/* for Background */
+body{ 
+    background-color: rgb(19, 0, 143);
+}
+.bgsticky{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: url('img/body.jpg') center center/ cover no-repeat;
+    opacity: 0.4;
+    z-index: -25;
+}
+
+
+/* NAVIGATION BAR SECTION */
+.navbar{
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    width: 95%;
+    margin: 1rem auto;
+    margin-bottom: 0;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 5;
+    border-radius: 30px;
+    box-shadow: 2px 2px 35px white; 
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    /* width: 100%; */
+    background-color: black;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* navbar logo */
+.logo{
+    margin-left: 2rem;
+}
+.navbar .logo img{
+    height: 2rem;
+    
+}
+/* navbar Menu */
+.navbar-menu ul{
+    display: flex;
+    margin-right: 2rem;
+}
+.navbar-menu li{
+    list-style: none;
+    padding: 0 1.5rem;
+}
+.navbar-menu li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+    /* font-family: 'Caveat', cursive; */
+    /* font-family: 'Fira Sans', sans-serif; */
+    /* font-family: 'Nerko One', cursive; */
+    /* font-family: 'Pacifico', cursive; */
+    /* font-family: 'Patrick Hand', cursive; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    /* color: rgb(255, 255, 191); */
+    color: white;
+    transition: 0.3s;
+
+}
+.navbar-menu li a:hover{
+    
+    color: rgb(134, 134, 134);
+    text-shadow: 2px 2px 5px black;
+
+}
+
+
+
+/* HOME-SECTION */
+
+#home-section{
+    /* background-color: green; */
+    height: 100vh;  /*better kept align with background*/
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* box-shadow: 10px 10px 20px black; */
+     
+}
+#home-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; /*because of navbar height*/
+    height: 100%; /*alignment with parent home-section*/
+    width: 100%;
+    background:url('img/bg2.jpg') center center/ cover;
+    z-index: -2;
+    /* opacity: 1; */
+
+}
+#home-section .heading3{
+    line-height: 4rem;
+    margin: 0 5.5rem;
+    color: white; 
+}
+#home-section p{
+    margin: 1.3rem 5.5rem;
+    color: white;
+}
+
+
+
+/* ABOUT-SECTION */
+
+#about-section{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid violet;
+    padding: 2rem 0;
+
+}
+#about-section .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+    
+}
+#about-section .content img{
+    /* height: 30%; */
+    width: 40%;
+    z-index: -2;
+    opacity: 0.8;
+    /* box-shadow: -5px -5px 10px blue; */
+    transition: 0.5s ease-in-out;
+    
+}
+#about-section .content .para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70ch;  /*ch is used for 'o' width, 70 ch means 70characters of o*/
+    height: 65%;
+    align-self: center;
+    position: relative;
+    left: -5rem;
+    /* border: 2px solid red; */
+    padding: 3rem;
+    transition: 1s;
+    
+}
+/* Below can change the property of other element when we hover on its parent(used to change property of other element when we are hovering over other) */
+#about-section .content:hover img{
+    opacity: 1;
+}
+#about-section .content:hover .para{
+    transform: scale(1.12);
+    box-shadow: -10px 10px 20px black;
+    /* font-size: 1em; */
+
+}
+#about-section .content p{
+    color: rgb(44, 44, 44);
+    
+}
+#about-section .content .para::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    background-color: white;
+    z-index: -1;
+    opacity: 0.7;
+    
+}
+
+
+
+
+/* COURSE-SECTION*/
+#course-section{
+    background-color: white;
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    padding: 2rem 0;
+    /* background-color: violet; */
+    
+}
+#course-section .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#course-section .content .image img{
+    position: absolute;
+    height: 33vh;
+    width: 50vh;
+    /* position: relative; */
+}
+#course-section .content .image{
+    /* border: 2px solid rgb(13, 0, 255); */
+    height: 33vh;
+    width: 50vh;
+    /* position: relative; */
+    margin: 1rem;
+}
+
+/* Created Overlay on image for animation(in absolute position to content) */
+#course-section .content .image .overlay{
+    position: absolute;
+    height: 33vh;
+    width: 50vh;
+    z-index: 2;
+    /* position: relative; */
+    background-color: black;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.6);
+    transition: 0.5s;
+   
+}
+#course-section .content .image .overlay p{
+    font-size: 1.5rem;
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    /* position: relative; */
+}
+#course-section .content .image:hover{
+    cursor: pointer;
+}
+/* when hover on class image(contains img and overlay) overlay transforms */
+#course-section .content .image:hover .overlay{
+    transform: scale(1);
+    opacity: 0.7;
+
+    /* Using Animation also Possible */
+    /* animation: sushil; */
+    /* animation-duration: 3s; */
+    /* animation-iteration-count: 1; */
+}
+#course-section .content .image:hover p{
+    opacity: 1;
+}
+
+
+/* We can use Below Animation also for Hovering instead of transform */
+
+/* @keyframes sushil{
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+} */
+
+
+
+
+/* BLOG SECTION */
+
+#blog-section{
+    background-color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    /* background-color: rgb(126, 126, 126); */
+}
+#blog-section .content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    height: 80vh;
+    width: 80%;
+    /* border: 2px solid rgb(0, 0, 0); */
+}
+#blog-section .content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    background-color: rgb(0, 0, 0);
+}
+#blog-section .content img{
+    height: 70%;
+    width: 40%;
+    /* left: 4rem; */
+    z-index: 1;
+}
+#blog-section .content .para{
+    /* right: 4rem; */
+    width: 40%;
+    height: 50%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+}
+#blog-section .para p{
+    color: white;
+}
+
+
+/* CONTACT US SECTION */
+
+#contact-section{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 4rem 0;
+}
+#contact-section .main-box{
+    height: 70%;
+    width: 80%;
+    /* border: 2px solid white; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact-section .main-box .box{
+    /* border: 2px solid yellow; */
+    width: 30%;
+    height: 80%;
+}
+
+/* icons: fb, insta, linkedin */
+#contact-section .main-box #icons{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#contact-section .main-box #icons img{
+    height: 8vh;
+    width: 8vh;
+    margin: 0 1rem;
+    filter:invert(100%); 
+}
+
+/* links */
+#contact-section .main-box #links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid white;
+}
+#links li{
+    list-style: none;
+    margin: 1rem 0;
+    position: relative;   
+}
+#links a{   
+    text-decoration: none;
+    color:white;
+    font-size: 1.5rem;
+    transition: 0.5s ease-in-out;
+}
+#links a:hover{
+    color: yellow;   
+}
+
+/* logo */
+#logo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid white;
+}
+#logo img{
+    width: 16rem;
+    height: 6rem;
+}
+
+
+/* FOOTER */
+footer{
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+}
+
+
+
+/* COMMON */
+
+.heading2{
+    font-size: 2.5rem;
+    /* font-family: 'Anton', sans-serif; */
+    /* font-family: 'Caveat', cursive; */
+    /* font-family: 'Fira Sans', sans-serif; */
+    /* font-family: 'Nerko One', cursive; */
+    /* font-family: 'Pacifico', cursive; */
+    /* font-family: 'Patrick Hand', cursive; */
+    font-family: 'Ubuntu', sans-serif;
+    align-self: center;
+    margin: 2rem;
+    padding: 1rem 0;
+    /* border: 2px solid rgb(72, 255, 0); */
+    height: 2.5rem;
+    position: relative;
+    transition: 1s;
+    text-shadow: 2px 2px 4px black;
+    color: rgb(255, 208, 0);
+
+}
+
+
+/* HOVER EFFECT CREATED BUT WE WANT, AUTOMATIC EFFECT WHEN APPRAOCH WINDOW OF SECTION */
+.heading2:after{
+    content: "";
+    height: 2%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255 255 255);
+    box-shadow: 0 2px 2px rgb(84 84 84);
+    width: 0%;
+    transition: 0.5s;
+    border-radius: 5px;
+
+}
+/* Heading animates when we slide along the sections */
+section:hover .heading2::after{
+    width: 100%;
+}
+
+
+.heading3{
+    font-size: 3.5rem;
+}
+
+.heading4{
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+.btn1{
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 30px;
+    background-color: rgb(255, 208, 0);
+    border: none;
+    box-shadow: 8px 8px 20px black;
+    transition: 0.2s;
+}
+.btn1:hover{
+    background-color: rgb(255, 208, 0);
+    box-shadow: 5px 5px 5px black;
+    transform: scale(0.9);
+    cursor: pointer;
+
+}
+
+.btn2{
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 30px;
+    color: white;
+    background-color: black;
+    border: 1px solid rgba(180, 180, 180, 0.545);
+    box-shadow: 5px 5px 10px black;
+    transition: 0.2s;
+}
+.btn2:hover{
+    background-color: rgb(11, 0, 85);
+    box-shadow: 5px 4px 5px black;
+    transform: scale(0.9);
+    cursor: pointer;
+    /* border: 1px solid rgba(255, 255, 255, 0.545); */
+
+}
+
+.buttons{
+    display: flex;
+    /* border: 2px solid palevioletred; */
+    width: 20rem;  /*with reference to buttons 8rem 8rem*/
+    justify-content: center;
+    margin: 1.5rem 5rem;
+}
+.buttons button{
+   margin: 0px 0.9rem;
+}
+
+
+/* 
+font-family: 'Anton', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Nerko One', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Ubuntu', sans-serif;
+ */
+
+
+
+ /* NOTES: 
+ 1. while using before or after for making background, always use
+ content=""
+ position: absolute;
+ top: 0;
+ left: 0:    if you want it to stick to the parent element
+ (and always have parent element position: relative;)
+
+
+ 2. While Hovering you can use transform option to scale up anything for animation, and not use widthm height change
+
+
+ 3. To create Dark Animation Over image, Use Overlay method in HTML
+ making
+ Img and Overlay as absolute of parent say 'IMAGE', and when hover over image, Overlay will get opacity high
+ 
+ 
+ 4. We can also use animation for hovering*/

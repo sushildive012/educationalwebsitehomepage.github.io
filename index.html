@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Educational Website Desktop Home Page" />
+    <meta property="og:description" content="This is my first landing page made using HTML and CSS for desktop screen." />
+    <meta property="og:image" content="img/previewimageforgaming.png" />
+
+    
+    <title>OneClassEducation.in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500&family=Fira+Sans&family=Nerko+One&family=Pacifico&family=Patrick+Hand&family=Ubuntu:wght@300;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="navbar">
+        <div class="logo">
+            <img src="img/Logo1.png" alt="">
+        </div>
+        <nav class="navbar-menu">
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#course-section">Courses</a></li>
+                <li><a href="#blog-section">Blog</a></li>
+                <li><a href="#contact-section">Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Background sticky image -->
+    <div class="bgsticky"></div>
+
+
+    <section id="home-section">
+        <h2 class="heading3">One-Class<br>Tutorials</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum inventore quidem minima.</p>
+        <div class="buttons">
+            <button class="btn1">
+                About Us
+            </button>
+            <button class="btn2">
+                Get a Quote
+            </button>
+        </div>
+    </section>
+
+    <section id="course-section">
+        <h2 class="heading2">Our Courses</h2>
+        <div class="content">
+            <!-- common class 'image' created to hover on it, and inside elements are targetted seperately to for animation -->
+            <div class="image">
+                <img src="img/Course1.jpg" alt="">
+                <!-- Created Overlay on image for animation(in absolute position to content) -->
+                <div class="overlay">
+                    <p>Business Analyst</p>
+                </div>
+            </div>
+            <div class="image">
+                <img src="img/Course2.jpg" alt="">
+                <div class="overlay">
+                    <p>Web Development</p>
+                </div>
+            </div>
+            <div class="image">
+                <img src="img/Course3.jpg" alt="">
+                <div class="overlay">
+                    <p>UI/UX Design</p>
+                </div>
+            </div>
+            <div class="image">
+                <img src="img/Course4.jpg" alt="">
+                <div class="overlay">
+                    <p>Programming</p>
+                </div>
+            </div>
+            <div class="image">
+                <img src="img/Course5.jpg" alt="">
+                <div class="overlay">
+                    <p>Game Development</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about-section">
+        <h2 class="heading2">About Us</h2>
+        <div class="content">
+            <img src="img/about.jpg" alt="">
+            <div class="para">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut aliquid sapiente odit, neque rerum
+                    voluptates quas voluptatibus et minus explicabo.Lorem ipsum dolor sit Consequuntur, totam. Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Tempora consectetur in ipsam fugit, dolor
+                    doloribus animi inventore ea ipsum unde.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic rem fugit reiciendis enim ratione
+                    voluptatibus doloribus sunt modi magni, iste explicabo eligendi incidunt dolore veritatis dicta?
+                    Dolorum harum possimus odio.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eius rem temporibus praesentium
+                    eaque ut deleniti dolore.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog-section">
+        <h2 class="heading2">Our Blog</h2>
+        <div class="content">
+            <div class="para">
+                <h4 class="heading4">One-Class Best Tutorials</h4>
+                <div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error blanditiis temporibus eum, quasi
+                        facilis laborum vero sit, adipisci quis, minus eius porro perspiciatis nobis quam aut
+                        dignissimos? Ipsam, dolores odit?</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptas.</p>
+                </div>
+                <button class="btn1">Read more</button>
+            </div>
+            <img src="img/Blogs.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <h2 class="heading2">Contact Us</h2>
+        <div class="main-box">
+            <div id="icons" class="box">
+                <img src="img/facebook.png" alt="">
+                <img src="img/instagram.png" alt="">
+                <img src="img/twitter.png" alt="">
+                <img src="img/linkedin.png" alt="">
+            </div>
+
+            <div id="links" class="box">
+                <ul>
+                    <li><a href="#home-section">Home</a></li>
+                    <li><a href="#about-section">About Us</a></li>
+                    <li><a href="#course-section">Courses</a></li>
+                    <li><a href="#blog-section">Blog</a></li>
+                </ul>
+            </div>
+
+            <div id="logo" class="box">
+                <img src="img/Logo1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>Copyright &copy; www.one-class.com. All rights reserved</footer>
+
+
+
+</body>
+
+</html>
